@@ -1,25 +1,24 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function Navbar() {
+const Navbar = () => {
   return (
-    <nav className="bg-gray-800 p-4 text-white">
-      <ul className="flex justify-center space-x-8">
+    <nav className="bg-gray-900 text-white p-4">
+      <ul className="flex gap-6 justify-center">
         <li>
-          <Link to="/" className="hover:text-yellow-400">Home</Link>
+          <Link className="hover:text-blue-400 transition" to="/">Home</Link>
         </li>
         <li>
-          <Link to="/projects" className="hover:text-yellow-400">Projects</Link>
+          <Link className="hover:text-blue-400 transition" to="/projects">Projects</Link>
         </li>
         <li>
-          <Link to="/about" className="hover:text-yellow-400">About</Link>
+          <Link className="hover:text-blue-400 transition" to="/about">About</Link>
         </li>
         <li>
-          <Link to="/contact" className="hover:text-yellow-400">Contact</Link>
+          <Link className="hover:text-blue-400 transition" to="/contact">Contact</Link>
         </li>
       </ul>
-      <Outlet />
     </nav>
   );
-}
+};
 
 export default Navbar;
