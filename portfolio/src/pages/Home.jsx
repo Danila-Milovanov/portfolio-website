@@ -8,7 +8,7 @@ const Home = () => {
         {/* Left Side - Text */}
         <div>
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            Hi, I'm <span className="text-blue-500">Your Name</span>
+            Hi, I'm <span className="text-blue-500">Danila</span>
           </h1>
 
           <h2 className="text-xl md:text-2xl text-gray-400 mb-6">
